@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    /* color: black; */
+}
+
+/* #main {
+    height: 120vh;
+    border: 2px solid #ff0000;
+} */
+
+#navbar {
+    /* position: fixed; */
+    height: 11vh;
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 175px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navbar #leftbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#navbar #leftbar h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+#navbar #leftbar .logo1 {
+    color: #ffa511;
+}
+
+#rightbar .rightbarul {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#rightbar ul .margin {
+    margin-left: 30px;
+    position: relative;
+}
+
+#rightbar ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    /* display: block; */
+    /* padding-left: 30px; */
+}
+
+.royelblue {
+    color: #6674cc;
+}
+
+#rightbar ul li .white {
+    color: white;
+    background-color: #6674cc;
+    padding: 10px 17px;
+    border-radius: 5px;
+}
+
+/* #rightbar ul li:nth-child(1) {
+    background-color: #6674cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+} */
+
+#rightbar ul li:nth-child(5) {
+    border: 2px solid #6674cc;
+    padding: 10px 17px;
+    border-radius: 5px;
+}
+
+#rightbar ul li .royleblue {
+    color: #6674cc;
+}
+
+/* dropdown menu stye start here */
+
+.dropicon {
+    margin-left: 30px;
+    position: relative;
+}
+
+/* Dropdown menu initially hidden */
+.dropdown_menu {
+    display: none;
+}
+
+.dropicon:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 215px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.dropdown_menu ul {
+    margin: 5px 15px;
+    display: block;
+
+}
+
+.dropdown_menu ul li {
+    padding-top: 8px;
+    text-decoration: none;
+    list-style: none;
+    width: 200px;
+    /* border: 1px solid red; */
+}
+
+
+.fas {
+    float: right;
+    padding-top: 3px;
+}
+
+/* landing page style start here */
+
+#landing_page {
+
+    background-image: url(/asset/backphot.jpeg);
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 170px;
+}
+
+#landing_page .textportion h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    /* font-weight: 800; */
+    /* margin-top: 12px; */
+    letter-spacing: 4px;
+}
+
+#landing_page .textportion .colorchage1 {
+    color: #6674cc;
+    margin-top: 12px;
+}
+
+#landing_page .textportion h3 {
+    font-size: 25px;
+    font-weight: 300;
+    padding: 35px 0px;
+}
+
+#landing_page .textportion .new_batches {
+    font-size: 20px;
+    color: white;
+    padding: 15px 20px;
+    background-color: #6674cc;
+    border-radius: 5px;
+    /* outline: none; */
+    border: none;
+    cursor: pointer;
+
+
+}
+
+#landing_page .photoleft {
+    background-image: url(/asset/Leonardo_Anime_XL_illustraction_of_techwear_style_Anubis_chibi_1\ \(1\).jpg);
+    height: 58vh;
+    width: 25vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-right: 110px;
+
+}
+
+/* bottom auto counging section start here */
+
+#bottom_autocounting {
+    height: 23vh;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+
+#bottom_autocounting h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    word-spacing: 3px;
+    margin-top: 20px;
+}
+
+#centretext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    width: 50vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+
+}
+
+#centretext div h3 {
+    margin-bottom: 8px;
+}
+
+#centretext div i {
+    margin-right: 7px;
+    font-size: 27px;
+
+}
+
+#centretext div span {
+    letter-spacing: 1px;
+}
+
+
+/* second page style here */
+
+#secondpage {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#secondpage .fontsi {
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fontsi1 {
+    margin-top: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 14px 20px;
+    border: none;
+    background-color: #667eea;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: -6px -3px 12px -2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: -6px -3px 12px -2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -6px -3px 12px -2px rgba(0, 0, 0, 0.2);
+}
+
+#secondpage h3 {
+    font-size: 30px;
+    color: #667eea;
+    text-transform: uppercase;
+}
+
+#secondpage h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+
+
+}
+
+#secondpage span {
+    font-size: 20px;
+}
+
+/* #secondpage button {
+   
+} */
+
+/* company phot css start here */
+#companysection {
+    background-color: #f8f8fd;
+    text-align: center;
+    padding-top: 80px;
+    border-bottom: 4px solid #ffa511;
+
+}
+
+#companysection h1 {
+    margin-bottom: 20px;
+}
+
+#companysection h1 span {
+    color: #667eea;
+}
+
+#grid_comp {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+
+#grid_comp img {
+    height: 60px;
+    width: 120px;
+    object-fit: contain;
+    object-position: center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 2px solid orange;*/
+}
+
+#companysection p {
+    margin: 20px 0px;
+    color: #696969;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*   <!-- Our Selected Students section style start here --> */
+
+#selected_student {
+    text-align: center;
+    padding-top: 80px;
+    color: #667eea;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+#selected_student h1 {
+    padding-bottom: 50px;
+}
+
+#selected_student #selectedstu_card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 50vh 50vh;
+    border: 2px solid rgb(0, 0, 0);
+    place-items: center;
+    height: 110vh;
+    background-image: url(/asset/cardback.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 32px;
+
+
+}
+
+#selectedstu_card .card {
+    height: 45vh;
+    width: 45vh;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card h2 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.card .imag {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* border: 2px solid white; */
+    /* padding: 5px; */
+
+
+
+}
+
+.card img {
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+
+}
+
+.details {
+    margin-bottom: 20px;
+
+}
+
+.details P {
+    color: white;
+    display: flex;
+    align-items: start;
+}
+
+.card span {
+    padding-right: 5px;
+    font-weight: bold;
+    color: #ffa511;
+}
+
+.itemcard4 h2 {
+    color: #000000;
+}
+
+#selected_student button {
+    margin-bottom: 80px;
+}
+
+/* on a mission to teach millions css starts here */
+
+
+#mission {
+    height: 100vh;
+    text-align: center;
+    margin: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#missionimg {
+    height: 80vh;
+    width: 80vw;
+    /* border: 2px solid orange; */
+    background-image: url(/asset/largeimg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+/* join section start here */
+
+#join {
+    margin-top: 20px;
+    background-color: #f8f8fd;
+    height: 50vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    margin-bottom: 50px;
+}
+
+#join .random {
+    font-size: 20px;
+    color: #667eea;
+    padding-top: 5px;
+}
+
+#join #media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    width: 50vw;
+
+
+}
+
+/* #join h1{
+    margin-top: 40px;
+} */
+
+#join #media i {
+    font-size: 50px;
+}
+
+#join #media .iconmedia1 {
+    color: #f44336;
+}
+
+#join #media .iconmedia2 {
+    color: #e91e63;
+}
+
+#join #media .iconmedia3 {
+    color: #03a9f4;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message span {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.message .lastone {
+    font-weight: bold;
+}
+
+/* <!-- fotter section start here --> */
+
+#footer {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+
+}
+
+#footer #underfooter {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 80%;
+}
+
+#underfooter #footer11 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#underfooter #footer11 .logodes {
+    text-align: center;
+
+}
+
+.logodes .logo10 {
+    color: #ffa511;
+    margin-bottom: 20px;
+}
+
+#underfooter #footer11 h2 {
+    font-size: 35px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #667eea;
+    padding-top: 5px;
+}
+
+
+.supports span {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.supports i {
+    margin-right: 8px;
+    color: #ffa511;
+    font-size: 25px;
+}
+
+#footer .footerlast{
+    font-size: 20px;
+    color: grey;
+
+}
